@@ -1,0 +1,7 @@
+{
+  "name": "pwned-password-checker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Koen Verheyen <verheyen.koen@gmail.com>",
+  "license": "MIT"
+}
