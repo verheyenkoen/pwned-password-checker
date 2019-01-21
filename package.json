@@ -1,7 +1,21 @@
 {
   "name": "pwned-password-checker",
+  "description": "Check a CSV file for breached passwords against HaveIBeenPwned",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Koen Verheyen <verheyen.koen@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/verheyenkoen/pwned-password-checker.git"
+  },
+  "devDependencies": {
+    "esm": "^3.1.0"
+  },
+  "bin": {
+    "pwned-password-checker": "./cli.js"
+  },
+  "dependencies": {
+    "yargs": "^12.0.5"
+  }
 }
