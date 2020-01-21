@@ -1,5 +1,5 @@
 import yargs from 'yargs'
-import csv from 'fast-csv'
+import * as csv from 'fast-csv'
 import sha1 from 'sha1'
 import fetch from 'node-fetch'
 
@@ -30,7 +30,7 @@ const args = yargs
 let count = 0
 
 csv
-  .fromPath(args.file, { headers: true, ignoreEmpty: true, trim: true })
+  .parseFile(args.file, { headers: true, ignoreEmpty: true, trim: true })
   .on('data', record => {
     if (record[args.password]) {
       count++
@@ -47,7 +47,7 @@ csv
         })
         .then(res => res.text())
         .then(data => {
-          csv.fromString(data, { delimiter: ':', headers: ['suffix', 'count'] }).on('data', data => {
+          csv.parseString(data, { delimiter: ':', headers: ['suffix', 'count'] }).on('data', data => {
             if (suffix === data.suffix) {
               console.log(`The password for "${record[args.name]}" was found ${data.count} time(s).`)
               console.log(`  User: ${record[args.username]} / Password: ${record[args.password]}`)
