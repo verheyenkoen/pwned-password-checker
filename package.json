@@ -13,9 +13,9 @@
     "esm": "^3.2.25"
   },
   "dependencies": {
-    "fast-csv": "^4.0.2",
+    "fast-csv": "^4.1.1",
     "node-fetch": "^2.6.0",
     "sha1": "^1.1.1",
-    "yargs": "^15.1.0"
+    "yargs": "^15.2.0"
   }
 }

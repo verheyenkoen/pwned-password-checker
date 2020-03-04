@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@fast-csv/format@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@fast-csv/format/-/format-4.0.2.tgz#7ed0ac63776e77c2e3502addf30a8acff79ed888"
-  integrity sha512-OqnJINuEdlmXTqEkSQXBCb2oR/4GcAV+Smy38q07Wdz2JSYw55O4McppteVcAYbp7eK+bgoha3ZGTC+R3GTUfg==
+"@fast-csv/format@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@fast-csv/format/-/format-4.1.1.tgz#baf6e70db90e4bf588b510228be9de44564a962c"
+  integrity sha512-xiapqgG9bTiCcDlxjuaV+HQt7kJGQOxCT3kXkOiT0S4Q3X6Zo0WE86iYQCo4X/tlkcjozPq3bc0f0AOhCI0wZw==
   dependencies:
     lodash.escaperegexp "^4.1.2"
     lodash.isboolean "^3.0.3"
@@ -13,10 +13,10 @@
     lodash.isfunction "^3.0.9"
     lodash.isnil "^4.0.0"
 
-"@fast-csv/parse@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@fast-csv/parse/-/parse-4.0.2.tgz#f6d6e204521e1154e07575ca9c6617197fb29a04"
-  integrity sha512-QQ9Vqn/QWQ/IcxMz5TlhJcr89b0A0Tclo5P1JdkYrSZB4VvyOHspM/EHqNJ8p4smesLDxw0b4flMxsTITSBl0g==
+"@fast-csv/parse@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@fast-csv/parse/-/parse-4.1.1.tgz#2ad2fae2c09952a8dd425a5a3d424a7407676f6d"
+  integrity sha512-ayyg/O1IlOWn0d0vcVmOz1DHnD5vutHbDdovKS2qX2PcT09TkZe0Xx/2Wh2CSynzM+2ynj/05fxYKFDpiorpzQ==
   dependencies:
     lodash.escaperegexp "^4.1.2"
     lodash.groupby "^4.6.0"
@@ -31,9 +31,9 @@
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
 
 "@types/node@^12.12.17":
-  version "12.12.25"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.25.tgz#792c0afb798f1dd681dce9c4b4c431f7245a0a42"
-  integrity sha512-nf1LMGZvgFX186geVZR1xMZKKblJiRfiASTHw85zED2kI1yDKHDwTKMdkaCbTlXoRKlGKaDfYywt+V0As30q3w==
+  version "12.12.29"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.29.tgz#46275f028b4e463b9ac5fefc1d08bc66cc193f25"
+  integrity sha512-yo8Qz0ygADGFptISDj3pOC9wXfln/5pQaN/ysDIzOaAWXt73cNHmtEC8zSO2Y+kse/txmwIAJzkYZ5fooaS5DQ==
 
 ansi-regex@^5.0.0:
   version "5.0.0"
@@ -99,13 +99,13 @@ esm@^3.2.25:
   resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
   integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
 
-fast-csv@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/fast-csv/-/fast-csv-4.0.2.tgz#ce01a7c433926512558ac18e15aee78683c674e1"
-  integrity sha512-ra9uIiXDEY1pRNnJJKPDtpL3ij9A1r4mCBef893yRkY4O4L0uWlpsZjEMPBME7Te9aqWNin6mbnqLG/QDpqw3A==
+fast-csv@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/fast-csv/-/fast-csv-4.1.1.tgz#5970535ff00a13e167fd4e58998edf67dbf0fb49"
+  integrity sha512-otu5Zc2O4xCLSZMw8NMAcl7ieJTh6RuH2kfvaEpiKnZ57jjy45estIoXyb8eisv3Js/ViBfdwNTmeyV+yMJwSw==
   dependencies:
-    "@fast-csv/format" "^4.0.2"
-    "@fast-csv/parse" "^4.0.2"
+    "@fast-csv/format" "^4.1.1"
+    "@fast-csv/parse" "^4.1.1"
     "@types/node" "^12.12.17"
 
 find-up@^4.1.0:
@@ -260,18 +260,18 @@ y18n@^4.0.0:
   resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b"
   integrity sha512-r9S/ZyXu/Xu9q1tYlpsLIsa3EeLXXk0VwlxqTcFRfg9EhMW+17kbt9G0NrgCmhGb5vT2hyhJZLfDGx+7+5Uj/w==
 
-yargs-parser@^16.1.0:
-  version "16.1.0"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-16.1.0.tgz#73747d53ae187e7b8dbe333f95714c76ea00ecf1"
-  integrity sha512-H/V41UNZQPkUMIT5h5hiwg4QKIY1RPvoBV4XcjUbRM8Bk2oKqqyZ0DIEbTFZB0XjbtSPG8SAa/0DxCQmiRgzKg==
+yargs-parser@^17.1.0:
+  version "17.1.0"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-17.1.0.tgz#b95ff3201e98b89e86070f92bef636016a0b0766"
+  integrity sha512-67zLl4/kWtp9eyVuxX+fHZ2Ey4ySWh0awDJlk/EtT0vzspsXbzrFsh76WjYSP3L++zhSwHQRUE3MCBe754RuEg==
   dependencies:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs@^15.1.0:
-  version "15.1.0"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.1.0.tgz#e111381f5830e863a89550bd4b136bb6a5f37219"
-  integrity sha512-T39FNN1b6hCW4SOIk1XyTOWxtXdcen0t+XYrysQmChzSipvhBO8Bj0nK1ozAasdk24dNWuMZvr4k24nz+8HHLg==
+yargs@^15.2.0:
+  version "15.2.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.2.0.tgz#cb9fc7f7ec429f7e9329b623f5c707a62dae506a"
+  integrity sha512-E+o8C37U+M7N15rBJVxr0MoInp+O7XNhMqveSGWA5uhddqs8qtkZ+uvT9FI32QML0SKidXdDONr40Xe3tDO9FA==
   dependencies:
     cliui "^6.0.0"
     decamelize "^1.2.0"
@@ -283,4 +283,4 @@ yargs@^15.1.0:
     string-width "^4.2.0"
     which-module "^2.0.0"
     y18n "^4.0.0"
-    yargs-parser "^16.1.0"
+    yargs-parser "^17.1.0"
