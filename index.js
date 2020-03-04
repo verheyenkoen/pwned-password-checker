@@ -8,19 +8,19 @@ const args = yargs
   .option('u', {
     alias: 'username',
     default: 'username',
-    description: 'The name or index of the username column in the CSV file',
+    description: 'The name of the username column in the CSV file',
     type: 'string'
   })
   .option('p', {
     alias: 'password',
     default: 'password',
-    description: 'The name or index of the password column in the CSV file',
+    description: 'The name of the password column in the CSV file',
     type: 'string'
   })
   .option('n', {
     alias: 'name',
     default: 'name',
-    description: 'The name or index of the name column in the CSV file',
+    description: 'The name of the service name column in the CSV file',
     type: 'string'
   })
   .alias('v', 'version')
