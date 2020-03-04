@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/verheyenkoen/pwned-password-checker.git"
   },
-  "bin": "./cli.js",
+  "bin": "./app.js",
   "devDependencies": {
     "esm": "^3.2.25"
   },
