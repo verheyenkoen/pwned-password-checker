@@ -40,15 +40,14 @@ csv
       const prefix = hash.substring(0, 5)
       const suffix = hash.substring(5)
 
-      fetch(`https://api.pwnedpasswords.com/range/${prefix}`)
+      fetch(`https://api.pwnedpasswords.com/range/${prefix}`, { headers: { 'Add-Padding': true } })
         .catch(err => {
-          debugger
           console.error(err)
         })
         .then(res => res.text())
         .then(data => {
           csv.parseString(data, { delimiter: ':', headers: ['suffix', 'count'] }).on('data', data => {
-            if (suffix === data.suffix) {
+            if (data.count > 0 && suffix === data.suffix) {
               console.log(`The password for "${record[args.name]}" was found ${data.count} time(s).`)
               console.log(`  User: ${record[args.username]} / Password: ${record[args.password]}`)
             }
