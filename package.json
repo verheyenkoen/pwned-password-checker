@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "fast-csv": "^4.1.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "sha1": "^1.1.1",
     "yargs": "^15.2.0"
   }
