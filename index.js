@@ -1,31 +1,35 @@
+#!/usr/bin/env node
+
 import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
 import * as csv from 'fast-csv'
 import sha1 from 'sha1'
 import fetch from 'node-fetch'
 
-const args = yargs
+const args = yargs(hideBin(process.argv))
   .command('$0 <file>', 'Check a CSV file for breached passwords against HaveIBeenPwned.')
   .option('u', {
     alias: 'username',
     default: 'username',
     description: 'The name of the username column in the CSV file',
-    type: 'string'
+    type: 'string',
   })
   .option('p', {
     alias: 'password',
     default: 'password',
     description: 'The name of the password column in the CSV file',
-    type: 'string'
+    type: 'string',
   })
   .option('n', {
     alias: 'name',
     default: 'name',
     description: 'The name of the service name column in the CSV file',
-    type: 'string'
+    type: 'string',
   })
   .alias('v', 'version')
   .alias('h', 'help')
-  .help().argv
+  .help()
+  .parse()
 
 let count = 0
 

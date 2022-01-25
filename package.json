@@ -8,14 +8,12 @@
     "type": "git",
     "url": "https://github.com/verheyenkoen/pwned-password-checker.git"
   },
-  "bin": "./app.js",
-  "devDependencies": {
-    "esm": "^3.2.25"
-  },
+  "bin": "./index.js",
+  "type": "module",
   "dependencies": {
     "fast-csv": "^4.3.6",
-    "node-fetch": "^3.1.1",
+    "node-fetch": "^3.2.0",
     "sha1": "^1.1.1",
-    "yargs": "^16.2.0"
+    "yargs": "^17.3.1"
   }
 }
