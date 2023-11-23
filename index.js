@@ -4,7 +4,6 @@ import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 import * as csv from 'fast-csv'
 import sha1 from 'sha1'
-import fetch from 'node-fetch'
 
 const args = yargs(hideBin(process.argv))
   .command('$0 <file>', 'Check a CSV file for breached passwords against HaveIBeenPwned.')
